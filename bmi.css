@@ -1,0 +1,49 @@
+*{
+margin:0;
+padding:0;
+}
+.content{
+	height: 267px;
+    width: 747px;
+    margin-left: 265px;
+    margin-top: 77px;
+}
+h2{
+	height: 35px;
+    width: 747px;
+    background-color: orange;
+    text-align: center;
+    color: black;
+    padding-top: 7px;
+}
+form{
+	background-color: #ffffda;
+    height: 183px;
+}
+.formgroup{
+	    height: 45px;
+    width: 747px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.formgroup input{
+	height: 24px;
+    width: 500px;
+}
+label{
+	    margin-right: 457px;
+    font-size: 15px;
+}
+button{
+	height: 36px;
+    width: 82px;
+}
+.formgroup1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+
+
+

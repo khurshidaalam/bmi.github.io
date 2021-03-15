@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+<div class="content">
+<h2>BODY MASS INDEX CALCULATOR</h2>
+<form name="bmiform" onsubmit="return false">
+<div class="formgroup">
+<label>Weight:</label></br>
+<input type="number" id="weight" required placeholder="weight in kilogram">
+</div>
+<div class="formgroup">
+<label>Height:</label></br>
+<input type="number" id="height"required placeholder="height in Ft">
+</div>
+<div class="formgroup1">
+<button type="submit" id="bmiplace" onclick="myfunction()">Check BMI</button>
+</div>
+<div class="formgroup">
+<input type="number" id="bmiweight">
+</div>
+</form>
+<footer>
+<div>
+<h2> A healthy body mass index is between 19 and 25 kg/m2</h2>
+</div>
+</footer>
+</div>
+<script>
+function myfunction(){
+  var weight = document.getElementById('weight').value;
+  var height = document.getElementById('height').value;
+
+ height = height * 12;
+ height = height * 0.025;
+ 
+ var bmivalue = weight / Math.pow(height,2);
+ bmivalue = Math.round(bmivalue);
+ 
+ document.getElementById('bmiweight').value = bmivalue;
+}
+</script>
+
+</body>
+
+</html>
